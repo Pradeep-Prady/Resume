@@ -1,0 +1,2273 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+
+:root{
+    --green:;
+    --red:#e23737;
+    --light-color:rgb(134, 134, 134);
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+
+
+* {
+	font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+section {
+  scroll-margin-top: 2rem;
+}
+/*section:nth-child(even){
+    background:#eee;
+}*/
+
+
+
+header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    background: black;
+    padding:2rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    border-bottom: .1rem solid whitesmoke;
+}
+header .logo {
+	color: white;
+	font-size: 2.5rem;
+	font-weight: bolder;
+}
+
+
+header .logo i {
+	color: red;padding-right: 10px;
+
+
+}
+
+
+header .navbar a {
+	font-size: 1.7rem;
+	border-radius: .5rem;
+	padding: .5rem 1.5rem;
+	color: white;
+}
+
+
+header .navbar a.active,
+header .navbar a:hover {
+	color: white;
+	background: red;
+} 
+
+
+header .icons i,
+header .icons a {
+	cursor: pointer;
+	margin-left: .5rem;
+	height: 4.5rem;
+	width: 4.5rem;
+	line-height: 4.5rem;
+	text-align: center;
+	font-size: 1.7rem;
+	color: var(--red);
+	border-radius: 50%;
+	background: #eee;
+}
+header .icons i:hover,
+header .icons a:hover{
+	color: #fff;
+	background: var(--red);
+	transform: rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+body {
+	background: black;
+}
+
+.space-1 {
+    width: 10%;
+    height: 50px;
+    background: red;
+}
+
+.home {
+    background: black;
+    padding-top: 15rem;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px red;
+}
+
+.home .image img {
+    height: 400px;
+    width: 500px;
+    margin-top: 10%;
+    margin-left: 10%;
+    transition: 1s;
+
+}
+
+.home .main-text {
+    color: whitesmoke;
+
+}
+.home .main-text h1 {
+    font-size: 4.5rem;
+    border: 1px red;
+    margin-right: 32rem;
+}
+
+.home .main-text h2 {
+    font-size: 2.7rem;
+
+}
+
+.home .main-text h3 {
+    font-size: 3.7rem;
+}
+
+.home .main-text .icons {
+
+    width: 25rem;
+    height: 8rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.home .main-text .icons a{
+
+    width: 5rem;
+    height: 5rem;
+}
+
+.home .main-text .icons a i {
+    font-size: 3.2rem;
+    color: ghostwhite;
+}
+
+
+.btn {
+    width: 16rem;
+    height: 4rem;
+    background: red;
+    color: white;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.btn:hover {
+    color: black;
+    background: white;
+}
+
+
+
+
+.about {
+    color: ghostwhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20rem;
+
+}
+
+.about .about-me {
+    width: 50%;
+
+}
+.about .about-me h2 {
+    font-size: 4rem;
+    padding-bottom: 15px;
+}
+
+.about .about-me p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding-bottom: 25px;
+    line-height: 2rem;
+    letter-spacing: 2px;
+}
+.about .details {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+
+.about .details td{
+    font-weight: bolder;
+    padding-right: 5px;
+    padding-left: 10px;
+    padding-bottom: 25px;
+}
+
+.about .profile-photo{
+
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: #e5e5e5;
+    box-shadow: -7px -7px 10px white,7px 7px 10px gray;
+    margin-left: 8%;
+    top: 30%;
+
+}
+
+.about .profile-photo img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-top: 5%;
+    margin-left: 5%;
+    transition: 1s;
+}
+
+
+.about .profile-photo img:hover {
+   
+    border-radius: 50%;
+    transform: translateX(-5%) translateY(-5%);
+    height: 400px;
+    width: 400px;
+
+    transition: 1s;
+
+}
+
+/* education section */
+
+.education {
+    padding-top: 10rem;
+    color: whitesmoke;
+    padding-bottom: 5rem;
+}
+
+.education h1 {
+    font-size: 4rem;
+}
+
+
+.education .academic td{
+    font-weight: bolder;
+    padding-right: 105px;
+    font-size: 1.6rem;
+    padding-top: 3rem;
+    padding-bottom: 20px;
+}
+.education .academic .title {
+    color: red;
+    font-size: 2rem;
+}
+
+
+/*skillset section*/
+
+.skillset {
+
+    padding-top: 2rem;
+    display: grid;
+    color: whitesmoke;
+    height: 100%;
+    place-items: center;
+
+}
+
+.skillset h1 {
+    font-size: 3rem;
+    padding-bottom: 3rem;
+    color: red;
+}
+
+
+.skill-bar {
+    width: 600px;
+    border: .1rem solid antiquewhite;
+    border-radius: 10px;
+    padding: 25px 30px;
+/*    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);*/
+}
+.skill-bar .bar {
+    margin: 20px 0;
+}
+
+.skill-bar .bar:first-child {
+    margin-top: 0px;
+}
+
+.skill-bar .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText .5s 1s linear forwards;
+}
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.skill-bar .bar .info {
+    margin-bottom: 5px;
+}
+
+.skill-bar .bar .prograss-line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: ghostwhite;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px white,
+                        0px 1px black;
+
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1.0, 0.0, .5, 1.0) forwards;
+
+
+}
+.skill-bar .bar .prograss-line span {
+    height: 100%;
+    /*width: 80%;*/
+    background: red;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1.0, 0.0, .5, 1.0) forwards;
+
+
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1.0);
+    }
+} 
+
+
+
+.prograss-line.html span{
+    width: 85%;
+}
+
+.prograss-line.css span{
+    width: 80%;
+}
+
+.prograss-line.python span{
+    width: 70%;
+}
+
+.prograss-line.javascript span{
+    width: 75%;
+}
+
+
+
+.skill-bar .bar .prograss-line span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: white;
+     opacity: 0;
+    animation: showText2 .5s 1.5s linear forwards;
+}
+.skill-bar .bar .prograss-line span::after {
+    position: absolute;  
+    right: 0;
+    top: -28px;
+    background: ghostwhite;
+    color: black;
+    font-weight: bolder;
+    font-size: 12px;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 .5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.prograss-line.html span::after {
+    content: "85%";
+}
+
+.prograss-line.css span::after {
+    content: "80%";
+}
+
+.prograss-line.python span::after {
+    content: "70%";
+}
+
+.prograss-line.javascript span::after {
+    content: "75%";
+}
+
+/*Projects style*/
+
+.projects {
+    color: whitesmoke;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    
+    
+
+} 
+
+.projects h1 {
+    font-size: 3rem;
+   /* margin-left: 40%;*/
+    padding-bottom: 3rem;
+    color: red;
+}
+
+.projects .pro-details {
+    width: 80%;
+    padding: 3% 10%;
+
+}
+.projects .pro-details p {
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+}
+
+
+.other-details h1 {
+    font-size: 3rem;
+    margin-left: 40%;
+    padding-bottom: 3rem;
+    color: red;    
+}
+
+.other-details .heading {
+    font-size: 3rem;
+    color: red;
+    padding-bottom: 5rem;
+}
+
+.other-details .workshop .content {
+    width: 85%;
+    height: 300px;
+    /*border: 1px solid lightgoldenrodyellow;*/
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+
+.other-details .workshop .content .first {
+    width: 40%;
+    /*border: .1rem solid whitesmoke;*/
+    color: whitesmoke;
+    
+}
+
+
+.other-details .workshop .content .first img {
+    width: 450px;
+    height: 250px;
+    /*border: .1rem solid whitesmoke;*/
+    border: 3px solid antiquewhite;
+}
+
+
+.other-details .workshop .content .first img:hover {
+    width: 750px;
+    height: 350px;
+    transform: translateX(-20%) translateY(15%);
+}
+
+
+.other-details .workshop .content .first p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+
+.other-details .workshop .content .second {
+    width: 42%;
+ /*   border: .1rem solid whitesmoke;*/
+    color: whitesmoke;
+   
+}
+
+
+.other-details .workshop .content .second img {
+    width: 450px;
+    height: 250px;
+    border: 3px solid antiquewhite;
+}
+
+.other-details .workshop .content .second img:hover {
+    width: 750px;
+    height: 350px;
+    transform: translateX(-30%) translateY(15%);
+}
+
+
+.other-details .workshop .content .second p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+
+/**/
+
+
+.other-details .credentials .content {
+    width: 85%;
+    height: 300px;
+    /*border: 1px solid lightgoldenrodyellow;*/
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+
+.other-details .credentials .content .first {
+    width: 40%;
+    /*border: .1rem solid whitesmoke;*/
+    color: whitesmoke;
+    
+}
+
+
+.other-details .credentials .content .first img {
+    width: 450px;
+    height: 250px;
+    /*border: .1rem solid whitesmoke;*/
+    border: 3px solid antiquewhite;
+}
+
+
+.other-details .credentials .content .first img:hover {
+    width: 750px;
+    height: 350px;
+    transform: translateX(-20%) translateY(15%);
+}
+
+
+.other-details .credentials .content .first p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+
+.other-details .credentials .content .second {
+    width: 42%;
+ /*   border: .1rem solid whitesmoke;*/
+    color: whitesmoke;
+   
+}
+
+
+.other-details .credentials .content .second img {
+    width: 450px;
+    height: 250px;
+    border: 3px solid antiquewhite;
+}
+
+.other-details .credentials .content .second img:hover {
+    width: 750px;
+    height: 350px;
+    transform: translateX(-30%) translateY(15%);
+}
+
+
+.other-details .credentials .content .second p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+/*hobbie*/
+
+
+
+.other-details .hobbie .content {
+    width: 85%;
+    height: 300px;
+    /*border: 1px solid lightgoldenrodyellow;*/
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+
+.other-details .hobbie .content .first {
+    width: 40%;
+    /*border: .1rem solid whitesmoke;*/
+    color: whitesmoke;
+    
+}
+
+
+.other-details .hobbie .content .first img {
+    width: 450px;
+    height: 250px;
+    /*border: .1rem solid whitesmoke;*/
+    border: 3px solid antiquewhite;
+}
+
+
+.other-details .hobbie .content .first img:hover {
+    width: 750px;
+    height: 350px;
+    transform: translateX(-20%) translateY(15%);
+}
+
+
+.other-details .hobbie .content .first p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+
+.other-details .hobbie .content .second {
+    width: 42%;
+ /*   border: .1rem solid whitesmoke;*/
+    color: whitesmoke;
+   
+}
+
+
+.other-details .hobbie .content .second img {
+    width: 450px;
+    height: 250px;
+    border: 3px solid antiquewhite;
+}
+
+.other-details .hobbie .content .second img:hover {
+    width: 750px;
+    height: 350px;
+    transform: translateX(-30%) translateY(15%);
+}
+
+
+.other-details .hobbie .content .second p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+
+/**/
+
+
+.other-details .interst .content {
+    width: 85%;
+    height: 300px;
+    /*border: 1px solid lightgoldenrodyellow;*/
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+
+.other-details .interst .content .first {
+    width: 40%;
+    /*border: .1rem solid whitesmoke;*/
+    color: whitesmoke;
+    
+}
+
+
+.other-details .interst .content .first img {
+    width: 450px;
+    height: 250px;
+    /*border: .1rem solid whitesmoke;*/
+    border: 3px solid antiquewhite;
+}
+
+
+.other-details .interst .content .first img:hover {
+    width: 750px;
+    height: 350px;
+    transform: translateX(-20%) translateY(15%);
+}
+
+
+.other-details .interst .content .first p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+
+.other-details .interst .content .second {
+    width: 42%;
+ /*   border: .1rem solid whitesmoke;*/
+    color: whitesmoke;
+   
+}
+
+
+.other-details .interst .content .second img {
+    width: 450px;
+    height: 250px;
+    border: 3px solid antiquewhite;
+}
+
+.other-details .interst .content .second img:hover {
+    width: 750px;
+    height: 350px;
+    transform: translateX(-30%) translateY(15%);
+}
+
+
+.other-details .interst .content .second p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+/* Contact container */
+
+.contact h1 {
+    font-size: 3rem;
+    margin-left: 40%;
+    padding-bottom: 3rem;
+    color: red;
+
+}
+
+.contact .contact-container {
+    width: 95%;
+    background: ghostwhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.contact .contact-container form {
+    width: 40%;
+    padding: 15px;
+   
+
+
+}
+
+.contact .contact-container form .qus {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: black;
+    padding: 10px 0;
+}
+.contact .contact-container form #input {
+    width: 400px;
+    height: 40px;
+    background: black;
+    border-radius: 10px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+.contact form textarea {
+    width: 400px;
+    height: 100px;
+    background: black;
+    border-radius: 10px;
+    color: whitesmoke;
+    padding: 5px;
+
+}
+.send-btn {
+    width: 100px;
+    height: 40px;
+    background: black;
+    color: whitesmoke;
+    padding: 5px 0;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.send-btn:hover {
+    background: red;
+    color: whitesmoke;
+}
+
+.contact .other-contact {
+    width: 55%;
+    border-left: 3px solid black;
+    padding-left: 5px;
+    display: inline-block;
+ 
+
+}
+
+.contact .other-contact h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    padding-bottom: 16px;
+}
+.contact .other-contact p,
+.contact .other-contact table .con-qus {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+
+.contact .other-contact table .con-ans {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 1000;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+footer {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3rem;
+    border-top: 1px solid whitesmoke;
+    
+    color: whitesmoke;
+    display: block;
+    padding: 5rem 0;
+
+
+}
+
+footer h1 {
+    margin-left: 43%;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+footer h2 {
+    margin-left: 43%;
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+}
+footer .icons-foot {
+    margin-left: 42%;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+footer .icons-foot i {
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+footer .icons-foot i:hover {
+    color: red;
+}
+footer p {
+    font-size: 1.2rem;
+    color: whitesmoke;
+    font-weight: 900;
+    margin-left: 40%;
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    header{
+        padding:1rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+
+}
+
+@media (max-width:768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background:#fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding:1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding:1.5rem;
+        margin:1rem;
+        font-size: 2rem;
+        background: black;
+    }
+    body {
+        overflow-x: hidden;
+    }
+
+/*  new styles */
+   
+   .home{
+        overflow-x: hidden;
+    }
+
+    .home .image img {
+        height: 250px;
+        width: 280px;
+        margin-left: 2%;
+
+}
+.home .main-text h1 {
+    font-size: 4.5rem;
+    margin-right: 24rem;
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+}
+   
+   .home .main-text h2 {
+    font-size: 2rem
+   } 
+   .home .main-text h3 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+   }
+
+   .home .main-text .icons {
+
+    width: 20rem;
+    height: 5rem;
+    
+   
+}
+
+.home .main-text .icons a{
+
+    width: 3rem;
+    height: 3rem;
+}
+.home .main-text .icons a i {
+    font-size: 2.2rem;
+}
+
+
+.btn {
+    width: 14rem;
+    height: 4rem;
+}
+
+
+.about {
+    padding-top: 10rem;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    width: 180%;
+    margin-left: 3%;
+}
+
+
+.about .about-me h2 {
+    font-size: 4rem;
+    padding-bottom: 10px;
+}
+
+.about .about-me p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding-bottom: 25px;
+    line-height: 2rem;
+    letter-spacing: 2px;
+}
+.about .details {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    padding-bottom: 2rem;
+}
+
+
+.about .profile-photo{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #e5e5e5;
+    box-shadow: -7px -7px 10px white,7px 7px 10px gray;
+    margin-left: 5%;
+    top: 30%;
+
+}
+
+.about .profile-photo img {
+    width: 250px;
+    height: 250px;
+   
+    margin-top: 7%;
+    margin-left: 7%;
+}
+
+.about .profile-photo img:hover {
+   
+    border-radius: 50%;
+    transform: translateX(-7%) translateY(-7%);
+    height: 300px;
+    width: 300px;
+
+}
+.education {
+    padding-top: 5rem;
+}
+
+.education h1 {
+    font-size: 4rem;
+}
+
+.education .academic td{
+    font-weight: bolder;
+    padding-right: 60px;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 10px;
+}
+.education .academic .title {
+    color: red;
+    font-size: 2rem;
+}
+
+.education .academic .inst {
+    width: 80px;
+}
+
+
+.skillset h1 {
+    font-size: 3rem;
+
+}
+
+.skill-bar {
+    width: 600px;
+    border: .1rem solid antiquewhite;
+    border-radius: 10px;
+    padding: 25px 30px;
+
+}
+.skill-bar .bar {
+    margin: 20px 0;
+}
+.skill-bar .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+
+}
+
+.projects h1 {
+    font-size: 3rem;
+   
+    padding-bottom: 3rem;
+    color: red;
+}
+
+.projects .pro-details p {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+
+
+
+.other-details h1 {
+    font-size: 3rem;
+    padding-top: 1rem;
+     
+}
+
+.other-details .heading {
+    font-size: 3rem;
+    
+}
+.other-details .workshop .content {
+    
+    margin-left: 1%;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 5rem;
+}
+
+.other-details .workshop .content .first,
+.other-details .workshop .content .second {
+
+    margin-left: 10rem;
+    
+}
+
+
+.other-details .workshop .content .first img,
+.other-details .workshop .content .second img {
+    width: 450px;
+    height: 250px;
+   
+}
+.other-details .workshop .content .first img:hover,
+.other-details .workshop .content .second img:hover {
+    width: 600px;
+    height: 300px;
+    transform: translateX(-10%) translateY(15%);
+}
+
+.other-details .workshop .content .first p,
+.other-details .workshop .content .second p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+}
+
+
+
+
+.other-details .credentials .content {
+    
+    margin-left: 1%;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 5rem;
+}
+
+.other-details .credentials .content .first,
+.other-details .credentials .content .second {
+    margin-left: 10rem;
+    
+}
+
+
+.other-details .credentials .content .first img,
+.other-details .credentials .content .second img {
+    width: 450px;
+    height: 250px;
+   
+}
+.other-details .credentials .content .first img:hover,
+.other-details .credentials .content .second img:hover {
+    width: 600px;
+    height: 300px;
+    transform: translateX(-10%) translateY(15%);
+}
+
+.other-details .credentials .content .first p,
+.other-details .credentials .content .second p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+
+.other-details .hobbie .content {
+    
+    margin-left: 1%;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 5rem;
+}
+
+.other-details .hobbie .content .first,
+.other-details .hobbie .content .second {
+    margin-left: 10rem;
+    
+}
+
+
+.other-details .hobbie .content .first img,
+.other-details .hobbie .content .second img {
+    width: 450px;
+    height: 250px;
+   
+}
+.other-details .hobbie .content .first img:hover,
+.other-details .hobbie .content .second img:hover {
+    width: 600px;
+    height: 300px;
+    transform: translateX(-10%) translateY(15%);
+}
+
+.other-details .hobbie .content .first p,
+.other-details .hobbie .content .second p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+
+.other-details .interst .content {
+    
+    margin-left: 1%;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 5rem;
+}
+
+.other-details .interst .content .first,
+.other-details .interst .content .second {
+    margin-left: 10rem;
+    
+}
+
+
+.other-details .interst .content .first img,
+.other-details .interst .content .second img {
+    width: 450px;
+    height: 250px;
+   
+}
+.other-details .interst .content .first img:hover,
+.other-details .interst .content .second img:hover {
+    width: 600px;
+    height: 300px;
+    transform: translateX(-10%) translateY(15%);
+}
+
+.other-details .interst .content .first p,
+.other-details .interst .content .second p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+
+
+ 
+
+.contact h1 {
+    font-size: 2.2rem;
+
+
+}
+
+
+.contact .contact-container {
+    width: 80%;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    margin-left: 10%;
+   
+}
+
+.contact .contact-container form {
+
+   margin-left: 5%;
+    padding: 15px;
+}
+.contact .contact-container form .qus {
+    font-size: 1.7rem;
+}
+.contact .contact-container form #input {
+    width: 400px;
+    height: 40px;
+}
+
+.contact form textarea {
+    width: 400px;
+    height: 100px;
+}
+
+.contact .other-contact {
+    border: none;
+    margin-left: 7%;
+    display: inline-block;
+ 
+
+}
+
+
+}
+
+@media (max-width:480px){
+
+    html{
+        font-size: 50%;
+    }
+
+
+
+    body {
+        overflow-x: hidden;
+    }
+
+/*  new styles */
+   
+   .home{
+        overflow: hidden;
+        margin-top: -5rem;
+    }
+
+    .home .image img {
+        height: 140px;
+        width: 160px;
+        margin-left: 8%;
+
+}
+.home .main-text h1 {
+    font-size: 3rem;
+    margin-right: 20rem;
+    padding-bottom: .5rem;
+    padding-top: 3rem;
+}
+   
+   .home .main-text h2 {
+    font-size: 1.7rem
+   } 
+   .home .main-text h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+   }
+
+   .home .main-text .icons {
+
+    width: 20rem;
+    height: 5rem;
+    
+   
+}
+
+.home .main-text .icons a{
+
+    width: 3rem;
+    height: 3rem;
+}
+.home .main-text .icons a i {
+    font-size: 2.2rem;
+}
+
+
+.btn {
+    width: 12rem;
+    height: 3rem;
+}
+
+
+.about {
+    padding-top: 10rem;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    width: 170%;
+    margin-left: 3%;
+}
+
+
+.about .about-me h2 {
+    font-size: 4rem;
+    padding-bottom: 10px;
+}
+
+.about .about-me p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding-bottom: 25px;
+    line-height: 2rem;
+    letter-spacing: 2px;
+}
+.about .details {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    padding-bottom: 2rem;
+    width: 300px;
+
+}
+
+
+.about .profile-photo{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #e5e5e5;
+    box-shadow: -7px -7px 10px white,7px 7px 10px gray;
+    margin-left: 5%;
+    top: 30%;
+
+}
+
+.about .profile-photo img {
+    width: 250px;
+    height: 250px;
+   
+    margin-top: 7%;
+    margin-left: 7%;
+}
+
+.about .profile-photo img:hover {
+   
+    border-radius: 50%;
+    transform: translateX(-7%) translateY(-7%);
+    height: 300px;
+    width: 300px;
+
+}
+.education {
+    padding-top: 5rem;
+}
+
+.education h1 {
+    font-size: 3rem;
+}
+
+.education .academic td{
+    font-weight: bolder;
+    padding-right: 2px;
+    font-size: 1.2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 7px;
+    width: 50px;
+}
+.education .academic .title {
+    color: red;
+    font-size: 1.4rem;
+}
+
+/*.education .academic .inst{
+    width: 50px;
+}
+.education .academic .mark{
+    width: 10px;
+}*/
+.skillset {
+    margin-right: 10%;
+}
+.skillset h1 {
+    font-size: 3rem;
+
+}
+
+.skill-bar {
+    width: 380px;
+    border: .1rem solid antiquewhite;
+    border-radius: 10px;
+    padding: 25px 20px;
+    
+
+}
+.skill-bar .bar {
+    margin: 20px 0;
+}
+.skill-bar .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+
+}
+
+.projects h1 {
+    font-size: 3rem;
+   
+    padding-bottom: 3rem;
+    color: red;
+}
+
+.projects .pro-details p {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+
+
+
+.other-details h1 {
+    font-size: 2.7rem;
+    padding-top: 1rem;
+    margin-left: 36%;
+     
+}
+
+.other-details .heading {
+    font-size: 3rem;
+    
+}
+.other-details .workshop .content {
+    
+    margin-left: 1%;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 5rem;
+}
+
+.other-details .workshop .content .first,
+.other-details .workshop .content .second {
+
+    margin-left: 1rem;
+    
+}
+
+
+.other-details .workshop .content .first img,
+.other-details .workshop .content .second img {
+    width: 350px;
+    height: 150px;
+   
+}
+.other-details .workshop .content .first img:hover,
+.other-details .workshop .content .second img:hover {
+    width: 400px;
+    height: 200px;
+    transform: translateX(-4%) translateY(15%);
+}
+
+.other-details .workshop .content .first p,
+.other-details .workshop .content .second p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+}
+
+.other-details .credentials .content {
+    
+    margin-left: 1%;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 5rem;
+}
+
+.other-details .credentials .content .first,
+.other-details .credentials .content .second {
+    margin-left: 1rem;
+    
+}
+
+
+.other-details .credentials .content .first img,
+.other-details .credentials .content .second img {
+    width: 350px;
+    height: 150px;
+   
+}
+.other-details .credentials .content .first img:hover,
+.other-details .credentials .content .second img:hover {
+    width: 400px;
+    height: 200px;
+    transform: translateX(-4%) translateY(15%);
+}
+
+.other-details .credentials .content .first p,
+.other-details .credentials .content .second p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+
+.other-details .hobbie .content {
+    
+    margin-left: 1%;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 5rem;
+}
+
+.other-details .hobbie .content .first,
+.other-details .hobbie .content .second {
+    margin-left: 1rem;
+    
+}
+
+
+.other-details .hobbie .content .first img,
+.other-details .hobbie .content .second img {
+    width: 350px;
+    height: 150px;
+   
+}
+.other-details .hobbie .content .first img:hover,
+.other-details .hobbie .content .second img:hover {
+    width: 400px;
+    height: 200px;
+    transform: translateX(-4%) translateY(15%);
+}
+
+.other-details .hobbie .content .first p,
+.other-details .hobbie .content .second p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+
+.other-details .interst .content {
+    
+    margin-left: 1%;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 5rem;
+}
+
+.other-details .interst .content .first,
+.other-details .interst .content .second {
+    margin-left: 1rem;
+    
+}
+
+
+.other-details .interst .content .first img,
+.other-details .interst .content .second img {
+    width: 350px;
+    height: 150px;
+   
+}
+.other-details .interst .content .first img:hover,
+.other-details .interst .content .second img:hover {
+    width: 400px;
+    height: 200px;
+    transform: translateX(-4%) translateY(15%);
+}
+
+.other-details .interst .content .first p,
+.other-details .interst .content .second p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+.contact h1 {
+    font-size: 2.2rem;
+
+
+}
+
+
+.contact .contact-container {
+    width: 85%;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    margin-left: 2%;
+   
+}
+
+.contact .contact-container form {
+
+   margin-left: 5%;
+    padding: 15px;
+}
+.contact .contact-container form .qus {
+    font-size: 1.7rem;
+}
+.contact .contact-container form #input {
+    width: 320px;
+    height: 40px;
+}
+
+.contact form textarea {
+    width: 320px;
+    height: 100px;
+}
+
+.contact .other-contact {
+    border: none;
+    margin-left: 7%;
+    display: inline-block;
+ 
+
+}
+
+footer {
+    width: 90%;
+   
+    margin-top: 3rem;
+    border-top: 1px solid whitesmoke;
+    
+    color: whitesmoke;
+    display: block;
+    padding: 5rem 0;
+
+
+}
+footer h1 {
+    margin-left: 24%;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+footer h2 {
+    margin-left: 24%;
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+}
+footer .icons-foot {
+    margin-left: 20%;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+footer .icons-foot i {
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+footer .icons-foot i:hover {
+    color: red;
+}
+footer p {
+    font-size: 1.2rem;
+    color: whitesmoke;
+    font-weight: 900;
+    margin-left: 20%;
+    margin-top: 2rem;
+}
+
+    
+
+}
+
+
+@media (min-width:260px){
+
+    html{
+        font-size: 50%;
+    }
+
+
+
+    body {
+        overflow-x: hidden;
+    }
+
+/*  new styles */
+   
+   .home{
+        overflow: hidden;
+        margin-top: -7rem;
+    }
+
+    .home .image img {
+        height: 100px;
+        width: 120px;
+        margin-left: 2rem;
+
+}
+.home .main-text h1 {
+    font-size: 2rem;
+    margin-right: -10rem;
+    padding-bottom: .5rem;
+    padding-top: 3rem;
+}
+   
+   .home .main-text h2 {
+    font-size: 1.2rem
+   } 
+   .home .main-text h3 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+   }
+
+   .home .main-text .icons {
+
+    width: 15rem;
+    height: 3rem;
+    
+   
+}
+
+.home .main-text .icons a{
+
+    width: 2rem;
+    height: 2rem;
+}
+.home .main-text .icons a i {
+    font-size: 2rem;
+}
+
+
+.btn {
+    width: 12rem;
+    height: 2.6rem;
+}
+
+
+.about {
+    padding-top: 7rem;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    width: 170%;
+    margin-left: 3%;
+}
+
+
+.about .about-me h2 {
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+.about .about-me p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 25px;
+    line-height: 2rem;
+    letter-spacing: 2px;
+}
+.about .details {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    padding-bottom: 2rem;
+    width: 300px;
+    margin-left: -2rem;
+
+}
+
+
+.about .profile-photo{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #e5e5e5;
+    box-shadow: -7px -7px 10px white,7px 7px 10px gray;
+    margin-left: 2%;
+    top: 30%;
+
+}
+
+.about .profile-photo img {
+    width: 250px;
+    height: 250px;
+   
+    margin-top: 7%;
+    margin-left: 7%;
+}
+
+.about .profile-photo img:hover {
+   
+    border-radius: 50%;
+    transform: translateX(-7%) translateY(-7%);
+    height: 300px;
+    width: 300px;
+
+}
+.education {
+    padding-top: 5rem;
+}
+
+.education h1 {
+    font-size: 3rem;
+}
+
+.education .academic td{
+    font-weight: bolder;
+    padding-right: 2px;
+    font-size: 1.2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 7px;
+    width: 50px;
+}
+.education .academic .title {
+    color: red;
+    font-size: 1.4rem;
+}
+
+/*.education .academic .inst{
+    width: 50px;
+}
+.education .academic .mark{
+    width: 10px;
+}*/
+.skillset {
+    margin-right: 10%;
+}
+.skillset h1 {
+    font-size: 3rem;
+
+}
+
+.skill-bar {
+    width: 300px;
+    border: .1rem solid antiquewhite;
+    border-radius: 10px;
+    padding: 25px 20px;
+    
+
+}
+.skill-bar .bar {
+    margin: 20px 0;
+}
+.skill-bar .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+
+}
+
+.projects h1 {
+    font-size: 3rem;
+   
+    padding-bottom: 3rem;
+    color: red;
+}
+
+.projects .pro-details p {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    width: 250px;
+}
+
+
+
+
+.other-details h1 {
+    font-size: 2.7rem;
+    padding-top: 1rem;
+    margin-left: 36%;
+     
+}
+
+.other-details .heading {
+    font-size: 3rem;
+    
+}
+.other-details .workshop .content {
+    
+    margin-left: 1%;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 5rem;
+}
+
+.other-details .workshop .content .first,
+.other-details .workshop .content .second {
+
+    margin-left: 1rem;
+    
+}
+
+
+.other-details .workshop .content .first img,
+.other-details .workshop .content .second img {
+     width: 270px;
+    height: 120px;
+   
+}
+.other-details .workshop .content .first img:hover,
+.other-details .workshop .content .second img:hover {
+    width: 320px;
+    height: 160px;
+    transform: translateX(-4%) translateY(15%);
+}
+
+.other-details .workshop .content .first p,
+.other-details .workshop .content .second p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 250px;
+
+}
+
+.other-details .credentials .content {
+    
+    margin-left: 1%;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 5rem;
+}
+
+.other-details .credentials .content .first,
+.other-details .credentials .content .second {
+    margin-left: 1rem;
+    
+}
+
+
+.other-details .credentials .content .first img,
+.other-details .credentials .content .second img {
+     width: 270px;
+    height: 120px;
+   
+}
+.other-details .credentials .content .first img:hover,
+.other-details .credentials .content .second img:hover {
+    width: 320px;
+    height: 160px;
+    transform: translateX(-4%) translateY(15%);
+}
+
+.other-details .credentials .content .first p,
+.other-details .credentials .content .second p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 250px;
+}
+
+
+
+
+
+.other-details .hobbie .content {
+    
+    margin-left: 1%;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 5rem;
+}
+
+.other-details .hobbie .content .first,
+.other-details .hobbie .content .second {
+    margin-left: 1rem;
+    
+}
+
+
+.other-details .hobbie .content .first img,
+.other-details .hobbie .content .second img {
+     width: 270px;
+    height: 120px;
+   
+}
+.other-details .hobbie .content .first img:hover,
+.other-details .hobbie .content .second img:hover {
+    width: 320px;
+    height: 160px;
+    transform: translateX(-4%) translateY(15%);
+}
+
+.other-details .hobbie .content .first p,
+.other-details .hobbie .content .second p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 250px;
+}
+
+
+
+
+
+.other-details .interst .content {
+    
+    margin-left: 1%;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 5rem;
+}
+
+.other-details .interst .content .first,
+.other-details .interst .content .second {
+    margin-left: 1rem;
+    
+}
+
+
+.other-details .interst .content .first img,
+.other-details .interst .content .second img {
+    width: 270px;
+    height: 120px;
+   
+}
+.other-details .interst .content .first img:hover,
+.other-details .interst .content .second img:hover {
+    width: 320px;
+    height: 160px;
+    transform: translateX(-4%) translateY(15%);
+}
+
+.other-details .interst .content .first p,
+.other-details .interst .content .second p {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 250px;
+}
+
+
+
+
+.contact h1 {
+    font-size: 2.2rem;
+
+
+}
+
+
+.contact .contact-container {
+    width: 90%;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    margin-left: 2%;
+   
+}
+
+.contact .contact-container form {
+
+   margin-left: 5%;
+    padding: 15px;
+}
+.contact .contact-container form .qus {
+    font-size: 1.7rem;
+}
+.contact .contact-container form #input {
+    width: 250px;
+    height: 40px;
+}
+
+.contact form textarea {
+    width: 250px;
+    height: 100px;
+}
+
+.contact .other-contact {
+    border: none;
+    margin-left: 7%;
+    display: inline-block;
+ 
+
+}
+
+footer {
+    width: 90%;
+   
+    margin-top: 3rem;
+    border-top: 1px solid whitesmoke;
+    
+    color: whitesmoke;
+    display: block;
+    padding: 5rem 0;
+
+
+}
+footer h1 {
+    margin-left: 24%;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+footer h2 {
+    margin-left: 24%;
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+}
+footer .icons-foot {
+    margin-left: 20%;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+footer .icons-foot i {
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+footer .icons-foot i:hover {
+    color: red;
+}
+footer p {
+    font-size: 1.2rem;
+    color: whitesmoke;
+    font-weight: 900;
+    margin-left: 20%;
+    margin-top: 2rem;
+}
+
+    
+
+}
